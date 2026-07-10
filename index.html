@@ -28,12 +28,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:cen
 /* HERO */
 .hero{position:relative;width:100%;height:100vh;min-height:720px;overflow:hidden;display:flex;align-items:flex-end}
 .hero-video-slot{position:absolute;inset:0;background-size:cover;background-position:center 25%}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,13,26,0.1) 0%,rgba(5,13,26,0.05) 35%,rgba(5,13,26,0.6) 70%,rgba(5,13,26,0.95) 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,13,26,0.6) 0%,rgba(5,13,26,0.5) 35%,rgba(5,13,26,0.82) 70%,rgba(5,13,26,0.98) 100%)}
 .hero-content{position:relative;z-index:2;width:100%;max-width:1280px;margin:0 auto;padding:0 64px 88px}
 .hero-tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(96,165,250,0.5);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:36px;backdrop-filter:blur(8px);background:rgba(5,13,26,0.3)}
 .hero-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero-h1{font-size:clamp(52px,7vw,96px);font-weight:900;line-height:1.12;letter-spacing:0.04em;color:#fff;margin-bottom:36px;text-shadow:0 2px 48px rgba(0,0,0,0.5)}
+.hero-h1{font-size:clamp(48px,6.5vw,88px);font-weight:900;line-height:1.15;letter-spacing:0.04em;color:#fff;margin-bottom:36px;text-shadow:0 4px 32px rgba(0,0,0,0.8)}
 .hero-h1 em{font-style:normal;background:linear-gradient(120deg,#93C5FD,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:18px;font-weight:400;line-height:2.1;color:rgba(255,255,255,0.7);max-width:520px;margin-bottom:52px;letter-spacing:0.02em}
 .hero-stats{display:flex;gap:52px;margin-bottom:56px;flex-wrap:wrap}
@@ -240,11 +240,9 @@ footer{background:#030810;padding:52px 64px;display:flex;align-items:center;just
 <!-- HERO -->
 <section class="hero">
   <div class="hero-video-slot">
-    <!-- ▼ 動画に差し替える場合:
     <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
       <source src="hero.mp4" type="video/mp4">
     </video>
-    -->
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -252,7 +250,7 @@ footer{background:#030810;padding:52px 64px;display:flex;align-items:center;just
       <div class="hero-dot"></div>
       AI Reskilling × 人材開発支援助成金
     </div>
-    <h1 class="hero-h1" style="white-space:pre-line">AIで、会社を<br><em>強くする。</em></h1>
+    <h1 class="hero-h1">AIで、会社を<br><em>強くする。</em></h1>
     <p class="hero-sub">国の助成金を活用して、社員がAIでHP・動画・SNSを<br>自分たちで作れるようになる実践型研修。</p>
     <div class="hero-stats">
       <div class="hero-stat">
