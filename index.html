@@ -28,7 +28,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:cen
 /* HERO */
 .hero{position:relative;width:100%;height:100vh;min-height:720px;overflow:hidden;display:flex;align-items:flex-end}
 .hero-video-slot{position:absolute;inset:0;background-size:cover;background-position:center 25%}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,13,26,0.6) 0%,rgba(5,13,26,0.5) 35%,rgba(5,13,26,0.82) 70%,rgba(5,13,26,0.98) 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,13,26,0.25) 0%,rgba(5,13,26,0.2) 35%,rgba(5,13,26,0.65) 70%,rgba(5,13,26,0.95) 100%)}
 .hero-content{position:relative;z-index:2;width:100%;max-width:1280px;margin:0 auto;padding:0 64px 88px}
 .hero-tag{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(96,165,250,0.5);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;padding:8px 20px;border-radius:100px;margin-bottom:36px;backdrop-filter:blur(8px);background:rgba(5,13,26,0.3)}
 .hero-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
@@ -74,7 +74,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:cen
 .pain-card:hover{background:rgba(59,130,246,0.07)}
 .picw{width:44px;height:44px;margin-bottom:32px}
 .picw svg{width:100%;height:100%}
-.pain-h{font-size:clamp(26px,2.8vw,34px);font-weight:800;color:#fff;line-height:1.4;margin-bottom:18px;letter-spacing:0.03em}
+.pain-h{font-size:clamp(18px,1.8vw,22px);font-weight:800;color:#fff;line-height:1.4;margin-bottom:12px;letter-spacing:0.02em}
 .pain-p{font-size:15px;color:rgba(255,255,255,0.42);line-height:1.95;letter-spacing:0.02em}
 .pmr{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .pmr .media-slot{height:320px}
@@ -287,7 +287,7 @@ footer{background:#030810;padding:52px 64px;display:flex;align-items:center;just
     <p class="sp">建設・不動産業界の多くの会社が、同じ壁にぶつかっています。</p>
 
     <!-- 2カラム：左=課題グリッド・右=動画枠 -->
-    <div class="pain-layout" style="display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:start">
+    <div class="pain-layout" style="display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start">
 
       <!-- 左：課題カード縦並び -->
       <div style="display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.06);border-radius:20px;overflow:hidden">
@@ -315,7 +315,7 @@ footer{background:#030810;padding:52px 64px;display:flex;align-items:center;just
 
       <!-- 右：動画差し込み枠（縦長・スティッキー） -->
       <div style="position:sticky;top:88px">
-        <div style="border-radius:20px;overflow:hidden;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);aspect-ratio:9/16;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
+        <div style="border-radius:20px;overflow:hidden;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);width:100%;height:calc(100vh - 200px);max-height:560px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
           <!--
             ▼ 動画に差し替える場合: <source src="problem.mp4"> に変更
           -->
